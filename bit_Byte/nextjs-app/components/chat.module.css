@@ -1,0 +1,81 @@
+.chatContainer {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 2rem;
+  max-width: 420px;
+  margin: 2rem auto;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.response {
+  background: rgba(255,255,255,0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-height: 2.5rem;
+  font-size: 1.1rem;
+  word-break: break-word;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.error {
+  color: #ff4d4f;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.inputRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.inputField {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  transition: background 0.2s;
+}
+.inputField:focus {
+  background: rgba(255,255,255,0.25);
+}
+
+.sendButton {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(229,46,113,0.15);
+}
+.sendButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.sendButton:not(:disabled):hover {
+  transform: translateY(-2px) scale(1.04);
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+}
